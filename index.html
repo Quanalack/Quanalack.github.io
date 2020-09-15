@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Read Only by HTML5 UP</title>
+		<title>Malte Hesk Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -16,17 +16,16 @@
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+					<span class="image avatar"><img src="images/avatarAang.jpg" alt="" /></span>
 					<h1 id="logo"><a href="https://www.linkedin.com/in/malte-hesk-m%C3%B8ller-891152151/" target="_blank">Malte Hesk</a></h1>
-					<p>I got reprogrammed by a rogue AI<br />
-					and now I'm totally cray</p>
+					<p>A little site about me for anyone who would care.<br />
+					Welcome! The good stuff is to your left</p>
 				</header>
 				<nav id="nav">
 					<ul>
 						<li><a href="#one" class="active">About Me</a></li>
 						<li><a href="#two">Languages and tech</a></li>
-						<li><a href="#three">Some of my projects</a></li>
-						<li><a href="#four">Contact</a></li>
+						<li><a href="#three">Some projects</a></li>
 					</ul>
 				</nav>
 				<footer>
@@ -46,31 +45,44 @@
 						<!-- One -->
 							<section id="one">
 								<div class="image main" data-position="center">
-									<img src="images/banner.jpg" alt="" />
+									<img src="images/getShitDone.jpg" alt="" />
 								</div>
 								<div class="container">
 									<header class="major">
-										<h2>Read Only</h2>
-										<p>Just an incredibly simple responsive site<br />
-										template freebie by <a href="http://html5up.net">HTML5 UP</a>.</p>
+										<h2>About Me</h2>
 									</header>
-									<p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
+									 <p id="ageCalculator">
+
+									<script>
+                                        var years = Math.abs(new Date().getFullYear() - new Date(1997, 8, 2, 12, 0, 0, 0).getFullYear());
+
+										document.getElementById("ageCalculator").innerHTML = "I am currently " + years.toString() +
+											" years old and finishing up my last semester to become a software engineer.";
+
+									</script> 
+									 <br />In my spare time (when I'm not programming) I like to spend my time doing gymnastics at <strong> <a href="http://sdusport.dk/afdelinger/odense/sdu-gymnastik/" target="_blank"> SDU </a></strong>, play some <strong><a href="images/keyboard.jpg" target="_blank"> piano </a></strong> or socialize with friends.</p>
+									<p> "Programming is like any other sport. You might know the rules but you have to play to learn.” <br> - Mark Zuckerberg </p>
+
 								</div>
 							</section>
 
 						<!-- Two -->
 							<section id="two">
 								<div class="container">
-									<h3>Experience</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
+									<h3>Languages</h3>
+									<p> My own little "confidence bar". Ask me how confident I am in a language? </p>
 									<ul class="feature-icons">
-										<li class="icon solid fa-code">Write all the code</li>
-										<li class="icon solid fa-cubes">Stack small boxes</li>
-										<li class="icon solid fa-book">Read books and stuff</li>
-										<li class="icon solid fa-coffee">Drink much coffee</li>
-										<li class="icon solid fa-bolt">Lightning bolt</li>
-										<li class="icon solid fa-users">Shadow clone technique</li>
+										<li> Java:         <progress value="90" max="100"></progress> </li>
+										<li> C#:                            <progress value="76" max="100"></progress> </li>
+										<li> C++:         <progress value="25" max="100"></progress> </li>
+										<li> SQL:                         <progress value="53" max="100"></progress> </li>
+										<li> Python:  <progress value="80" max="100"></progress> </li>
+										<li> Front end stuff: <progress value="62" max="100"></progress> </li>
+										<li></li>
+										<li> (CSS, Javascript and HTML)</li>
+
 									</ul>
+									<p> Personally I think it's extremely difficult to evaluate what language you're "good at". Especialy when doing it yourself. <br /> But as socrates said best: "I know that I know nothing"</p>
 								</div>
 							</section>
 
@@ -81,58 +93,65 @@
 									<p>Over the years I've worked on a lot of different projects. Some solo projects and some in teams. </p>
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<a href="internship.html">
+												<img class="image" src="images/VleppoLogo.png" alt="" />
+											</a>
 											<div class="inner">
-												<h4>Internship</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<a href="internship.html">
+													<h4>Internship</h4>
+												</a>
+												<p>I had the pleasure of working for </a> <a href="https://www.vleppo.com" target="_blank"> <strong> Vleppo</strong> </a> for 5 months. In which I learned a lot about blockchain, C++, web devlopment and python. </p></a>
+											</div>
+
+										</article>
+										
+										<article>
+											<a href="beerProduction.html">
+												<img class="image" src="images/beer.jpg" alt="" />
+											</a>
+											<div class="inner">
+												<a href="beerProduction.html">
+													<h4>Beer Production</h4>
+												</a>
+												<p> As part of a semester project I was in a group writing a system and GUI to control a beer brewery machine. Especially interesting about this project was working with OEE (Overall Equipment Effectiveness) and machines.</p>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<a href="musicPlayer.html">
+												<img class="image" src="images/music.png" alt="" />
+												</a>
 											<div class="inner">
-												<h4>Beer Production</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
+												<a href="musicPlayer.html">
+													<h4>Music Player</h4>
+												</a>
+												<p>As I am one of the very few people in the world interested in music I wanted to take a shot at programming my own music player for my android phone. This was surprisingly written in Android Studio!</p>
+</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+											<a href="cinemaMovies.html" class="image">
+												<img src="images/cinema.png" alt="" />
+											</a>
 											<div class="inner">
-												<h4>Music Player</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
+												<a href="cinemaMovies.html" class="image">
+													<h4>Cinema Movies</h4>
+												</a>
+												<p>As for music I am also a part of the minority who occasionally watches movies. Therefore I wrote a little app to show the movies running in cinema, their rating and a short summary.</p>
+</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+											<a href="aStar.html" class="image">
+												<img src="images/aStar.png" alt="" />
+											</a>
 											<div class="inner">
-												<h4>Cinema Movies</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<a href="aStar.html" class="image">
+													<h4>A* Pathfinding Algorithm</h4>
+												</a>
+												<p>After my internship I wanted to learn some more Python. To do that I made this! <br /> An <strike>alrgorhythn</strike> algorithm to find the shortest path between two squares.</p>
 											</div>
 										</article>
 									</div>
 								</div>
-							</section>
-
-						<!-- Four -->
-							<section id="four">
-								<div class="container">
-									<h3>Contact Me</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-									<form method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" class="primary" value="Send Message" /></li>
-													<li><input type="reset" value="Reset Form" /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
-								</div>
-							</section>
+							</section>	
 
 						<!-- Five -->
 						<!--
@@ -457,8 +476,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 											</div>
 										</div>
 										<h5>Left &amp; Right</h5>
-										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+										<p><span class="image left"><img src="images/avatarAang.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+										<p><span class="image right"><img src="images/avatarAang.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
 									</section>
 
 								</div>
@@ -486,6 +505,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/ageCalculator.js"></script>
 
 	</body>
 </html>
