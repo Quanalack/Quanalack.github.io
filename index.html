@@ -55,15 +55,18 @@
 									<p id="ageCalculator">
 
 										<script>
-											var birthday = new Date(1997, 8, 2, 12, 0, 0, 0);
-											var ageDifMs = Date.now() - birthday.getTime();
-										    var ageDate = new Date(ageDifMs); // miliseconds from epoch
-										    var years Math.abs(ageDate.getUTCFullYear() - 1970);
 
-											document.getElementById("ageCalculator").innerHTML = "I was born 2. august 1997 which makes me currently " + years.toString() +
+											function calculate_age(dob) {
+											    var diff_ms = Date.now() - dob.getTime();
+											    var age_dt = new Date(diff_ms);
+											    return Math.abs(age_dt.getUTCFullYear() - 1970);
+											}
+
+											document.getElementById("ageCalculator").innerHTML = "I was born 2. august 1997 which makes me currently " + calculate_age(new Date(1997, 8, 2)) +
 												" years old.";
 
 										</script>
+										<div id="ageCalculator" > </div>
 										<br /> Right now (sep. 2020) I am finishing up my hopefully last semester to become a software engineer. In my spare time (when I'm not programming) I like to spend my time doing gymnastics at <strong> <a href="http://sdusport.dk/afdelinger/odense/sdu-gymnastik/" target="_blank"> SDU </a></strong>, play some <strong><a href="images/keyboard.jpg" target="_blank"> piano </a></strong> or socialize with friends.
 									</p>
 									<p><i> "Programming is like any other sport. You might know the rules but you have to play to learn.” <br> - Mark Zuckerberg</i> </p>
@@ -111,44 +114,44 @@
 										</article>
 
 										<article id="beerProduction">
-											<a href="beerProduction.html">
+											<a href="projects\beerProduction.html">
 												<img class="image" src="images/beer.jpg" alt="" />
 											</a>
 											<div class="inner">
-												<a href="beerProduction.html">
+												<a href="projects\beerProduction.html">
 													<h4>Beer Production</h4>
 												</a>
 												<p> As part of a semester project I was in a group writing a system and GUI to control a beer brewery machine. Especially interesting about this project was working with OEE (Overall Equipment Effectiveness) and machines.</p>
 											</div>
 										</article id="internship">
 										<article id="musicPlayer">
-											<a href="musicPlayer.html">
+											<a href="projects\musicPlayer.html">
 												<img class="image" src="images/music.png" alt="" />
 												</a>
 											<div class="inner">
-												<a href="musicPlayer.html">
+												<a href="projects\musicPlayer.html">
 													<h4>Music Player</h4>
 												</a>
 												<p>As I am one of the very few people in the world interested in music I wanted to take a shot at programming my own music player for my android phone. This was surprisingly written in Android Studio!</p>
 </div>
 										</article>
 										<article id="cinemaMovies">
-											<a href="cinemaMovies.html" class="image">
+											<a href="projects\cinemaMovies.html" class="image">
 												<img src="images/cinema.png" alt="" />
 											</a>
 											<div class="inner">
-												<a href="cinemaMovies.html" class="image">
+												<a href="projects\cinemaMovies.html" class="image">
 													<h4>Cinema Movies</h4>
 												</a>
 												<p>As for music I am also a part of the minority who occasionally watches movies. Therefore I wrote a little app to show the movies running in cinema, their rating and a short summary.</p>
 </div>
 										</article>
 										<article id="pathfinding">
-											<a href="aStar.html" class="image">
+											<a href="projects\aStar.html" class="image">
 												<img src="images/aStar.png" alt="" />
 											</a>
 											<div class="inner">
-												<a href="aStar.html" class="image">
+												<a href="projects\aStar.html" class="image">
 													<h4>A* Pathfinding Algorithm</h4>
 												</a>
 												<p>After my internship I wanted to learn some more Python. To do that I made this! <br /> An <strike>alrgorhythn</strike> algorithm to find the shortest path between two squares.</p>
