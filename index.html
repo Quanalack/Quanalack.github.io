@@ -55,15 +55,18 @@
 									<p id="ageCalculator">
 
 										<script>
-											var birthday = new Date(1997, 8, 2, 12, 0, 0, 0);
-											var ageDifMs = Date.now() - birthday.getTime();
-										    var ageDate = new Date(ageDifMs); // miliseconds from epoch
-										    var years Math.abs(ageDate.getUTCFullYear() - 1970);
 
-											document.getElementById("ageCalculator").innerHTML = "I was born 2. august 1997 which makes me currently " + years.toString() +
+											function calculate_age(dob) {
+											    var diff_ms = Date.now() - dob.getTime();
+											    var age_dt = new Date(diff_ms);
+											    return Math.abs(age_dt.getUTCFullYear() - 1970);
+											}
+
+											document.getElementById("ageCalculator").innerHTML = "I was born 2. august 1997 which makes me currently " + calculate_age(new Date(1997, 8, 2)) +
 												" years old.";
 
 										</script>
+										<div id="ageCalculator" > </div>
 										<br /> Right now (sep. 2020) I am finishing up my hopefully last semester to become a software engineer. In my spare time (when I'm not programming) I like to spend my time doing gymnastics at <strong> <a href="http://sdusport.dk/afdelinger/odense/sdu-gymnastik/" target="_blank"> SDU </a></strong>, play some <strong><a href="images/keyboard.jpg" target="_blank"> piano </a></strong> or socialize with friends.
 									</p>
 									<p><i> "Programming is like any other sport. You might know the rules but you have to play to learn.” <br> - Mark Zuckerberg</i> </p>
